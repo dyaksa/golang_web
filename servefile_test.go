@@ -28,7 +28,7 @@ func TestServeFile(t *testing.T) {
 	}
 }
 
-//go:embed resources/oke.htmk
+//go:embed resources/ok.html
 var ok string
 
 //go::embed resources/notfound.html
