@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{.Title}}</title>
+    </head>
+    <body>
+        {{ range $index, $element := .Hobbies }}
+            <h1>{{ $element }}</h1>
+        {{else}}
+            <h1>Anda Tidak Punya Data</h1>
+        {{end}}
+    </body>
+</html>

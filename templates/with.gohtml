@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{.Title}}</title>
+    </head>
+    <body>
+        <h1>{{.Name}}</h1>
+        {{ with .Address }}
+            Street : {{.Street}}
+            Number : {{.Number}}
+        {{else}}
+            <h1>Tidak Ada Address</h1>
+        {{end}}
+    </body>
+</html>
